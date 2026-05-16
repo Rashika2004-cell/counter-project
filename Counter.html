@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+
+</head>
+<body>
+<h1>Hello guyss.</h1>
+<h3>This is your counter</h3>
+<h1 class="counter">0</h1>
+    <button class="btn1">Increase</button>
+  
+  <button class="btn2">Decrease</button>
+<button class="btn3">Reset</button>
+
+<script>
+    let count=0;
+  let h1=  document.getElementsByClassName("counter")[0];
+let btn1=document.querySelector(".btn1");
+btn1.addEventListener('click', function(){
+count++;
+h1.innerHTML=count;
+})
+
+let btn2=document.querySelector(".btn2");
+btn2.addEventListener("click", function(){
+count--;
+h1.innerHTML=count;
+})
+
+let btn3=document.querySelector(".btn3");
+btn3.addEventListener('click', function(){
+count=0;
+h1.innerHTML=count;
+})
+btn1.style.backgroundColor="lightgreen";
+btn2.style.backgroundColor="pink";
+btn3.style.backgroundColor="yellow";
+btn1.style.color="brown";
+btn2.style.color="brown";
+btn3.style.color="brown";
+
+</script>
+
+</body>
+</html>
